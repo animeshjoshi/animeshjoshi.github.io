@@ -1,97 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animesh Joshi - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animesh Joshi's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="profile">
-      <img src="profile.jpeg" alt="Animesh Joshi">
-      <h1>Animesh Joshi</h1>
-      <p>Mathematical Statistics Student at Purdue University</p>
-    </div>
-  </header>
 
-  <nav>
+<header>
+    <img src="your-photo.jpg" alt="Animesh Joshi">
+    <h1>Animesh Joshi</h1>
+    <p>Mathematics and Statistics Student at Purdue University | Aspiring Data Scientist</p>
+</header>
+
+<nav>
     <ul>
-      <li><a href="#internships">Internships & Research</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
       <li><a href="#resume">Resume</a></li>
+        <li><a href="#social-links">Contact</a></li>
+     
     </ul>
-  </nav>
+</nav>
 
-  <section id="internships">
-    <h2>Internships and Research Experiences</h2>
-    <div class="experience">
-      <h3>Data Management Intern - Dexcom (Summer 2025)</h3>
-      <p>Incoming Intern at Dexcom. In this role, I will be working on manufacturing data management and validation.</p>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm an undergraduate student at Purdue University majoring in Mathematics and Statistics. I will be working as a data management intern at Dexcom this summer and previously worked at Axos Bank as a Credit Risk Analytics intern. I am doing research at Purdue focused on understanding fairness violations in machine learning and identifying data points that cause these violations. More generally, I am interested in Statistical Inference, Causal Inference, Econometrics, and Machine Learning.</p>
+</section>
 
-      <h3>Credit Analytics Intern - Axos Bank (Summer 2024)</h3>
-      <p>In this role, I worked in the credit analytics department to provide data analytics solutions for commercial lending strategy. The primary project I worked on was building a report to show monthly trends in key lending metrics (LTV, FICO, Utilization Rate, etc.) for loan originations. I also built a report to show monthly trends in key lending metrics for all loans in the bank’s portfolio. These trends were presented alongside trends in delinquency to establish which risk metrics were the drivers of loan delinquencies and defaults. I also worked on ad-hoc reporting tickets which involved editing and optimizing reports used for asset management and regulatory compliance.</p>
+<section id="experience">
+    <h2>Experience</h2>
 
-      <h3>Responsible Data Science Researcher - Purdue University (2024-2025 Academic Year)</h3>
-      <p>During this research experience, I had the opportunity to learn about responsible data management and machine learning. I trained a logistic regression classifier to predict credit ratings for prospective loan applicants. I developed a script to calculate machine learning fairness metrics based on a peer-reviewed paper. These metrics included well calibration, equalized odds, causal discrimination, and fairness through unawareness. I am currently working on identifying which data points contribute to model bias through the use of Shapley values and influence functions. I am prototyping an estimation of the influence value and testing to see if estimated influence values align with “ground-truth” values obtained through the leave-one-out approach.</p>
-
-      <h3>ML Researcher - Purdue University (2024-2025 Academic Year)</h3>
-      <p>During this experience, I learned about state-of-the-art topics in machine learning. I began this experience by learning about foundation models, such as transformers and diffusion models. I worked on background tasks for a project on solving stochastic PDEs using diffusion models. These background tasks included recreating a dataset of stochastic PDEs and their solutions that was used in a prior study, prototyping diffusion hyperparameter optimization using Optuna, and implementing a probabilistic diffusion model from scratch. I also performed literature reviews to learn about topics such as diffusion models, masked autoencoders, and partial differential equations. Later on, I worked for a bit on a project that involved graph diffusion policy optimization. I worked to reproduce the results of a prior study that used graph diffusion policy optimization for generative modeling of chemical structures of drugs. Currently, I am learning more about optimal transport and learning a continuous trajectory between distributions using stochastic samples from each distribution.</p>
-
-      <h3>Data Science Researcher - Purdue University (2022-2023 Academic Year)</h3>
-      <p>This experience was a corporate partnership as part of the Data Mine learning community. In this role, I worked on identifying algal contamination in lakes and rivers within the State of Indiana. I collected satellite image data from the sentinel hub EO browser and leveraged methods such as image tiling and data augmentations to build a dataset of true color image tiles and corresponding water quality masks. I then developed a U-Net model for semantic segmentation to create a water quality mask from a true color image tile in order to assess where in a lake or river water quality issues existed. I also helped fine-tune a pretrained ResNet50 classifier to detect true color image tiles that showed signs of significant algae contamination. I presented my findings along with my group at the annual Data Mine Symposium.</p>
+    <div class="experience-card">
+        <h3>Data Management Intern</h3>
+        <p><strong>Company:</strong> Dexcom</p>
+        <p><strong>Dates:</strong> Summer 2025</p>
+        <p><strong>Description:</strong> Incoming Intern at Dexcom. In this role, I will be working on manufacturing data management and validation.</p>
     </div>
-  </section>
 
-  <section id="education">
+    <div class="experience-card">
+        <h3>Credit Analytics Intern</h3>
+        <p><strong>Company:</strong> Axos Bank</p>
+        <p><strong>Dates:</strong> Summer 2024</p>
+        <p><strong>Description:</strong> In this role, I worked in the credit analytics department to provide data analytics solutions for commercial lending strategy. The primary project I worked on was building a report to show monthly trends in key lending metrics (LTV, FICO, Utilization Rate, etc.) for loan originations. I also built a report to show monthly trends in key lending metrics for all loans in the bank's portfolio. These trends were presented alongside trends in delinquency to establish which risk metrics were the drivers of loan delinquencies and defaults. I also worked on ad-hoc reporting tickets which involved editing and optimizing reports used for asset management and regulatory compliance.</p>
+    </div>
+
+    <div class="experience-card">
+        <h3>Responsible Data Science Researcher</h3>
+        <p><strong>Company:</strong> Purdue University</p>
+        <p><strong>Dates:</strong> 2024-2025 Academic Year</p>
+        <p><strong>Description:</strong> During this research experience, I had the opportunity to learn about responsible data management and machine learning. I trained a logistic regression classifier to predict credit ratings for prospective loan applicants. I developed a script to calculate machine learning fairness metrics based on a peer-reviewed paper. These metrics included well calibration, equalized odds, causal discrimination, and fairness through unawareness. I am currently working on identifying which data points contribute to model bias through the use of shapley values and influence functions. I am prototyping an estimation of the influence value and testing to see if estimated influence values align with "ground-truth" values obtained through a leave-one-out approach.</p>
+    </div>
+
+    <div class="experience-card">
+        <h3>ML Researcher</h3>
+        <p><strong>Company:</strong> Purdue University</p>
+        <p><strong>Dates:</strong> 2024-2025 Academic Year</p>
+        <p><strong>Description:</strong> During this experience, I learned about state-of-the-art topics in machine learning. I began this experience by learning about foundation models, such as transformers and diffusion models. I worked on background tasks for a project on solving stochastic PDEs using diffusion models. These background tasks included recreating a dataset of stochastic PDEs and their solutions that was used in a prior study, prototyping diffusion hyperparameter optimization using optuna, and implementing a probabilistic diffusion model from scratch. I also performed literature reviews to learn about topics such as diffusion models, masked autoencoders, and partial differential equations. Later on, I worked for a bit on a project which involved graph diffusion policy optimization. I worked to reproduce the results of a prior study that used graph diffusion policy optimization for generative modeling of chemical structures of drugs. Currently, I am learning more about optimal transport and learning a continuous trajectory between distributions using stochastic samples from each distribution.</p>
+    </div>
+
+    <div class="experience-card">
+        <h3>Data Science Researcher</h3>
+        <p><strong>Company:</strong> Purdue University</p>
+        <p><strong>Dates:</strong> 2022-2023 Academic Year</p>
+        <p><strong>Description:</strong> This experience was a corporate partnership as part of the Data Mine learning community. In this role, I worked on identifying algal contamination in lakes and rivers within the State of Indiana. I collected satellite image data from the sentinel hub EO browser and leveraged methods such as image tiling and data augmentations to build a dataset of true color image tiles and corresponding water quality masks. I then developed a U-Net model for semantic segmentation to create a water quality mask from a true color image tile in order to assess where in a lake or river water quality issues existed. I also helped fine-tune a pretrained ResNet50 classifier to detect true color image tiles that showed signs of significant algae contamination. I presented my findings along with my group at the annual Data Mine Symposium.</p>
+    </div>
+
+    <!-- You can display the PDF here for the Data Science Researcher -->
+    <div class="pdf-display">
+        <h4>Research Poster</h4>
+        <embed src="poster.pdf" type="application/pdf" width="100%" height="600px">
+    </div>
+</section>
+
+<section id="education">
     <h2>Education</h2>
-    <h3>Purdue University</h3>
-    <p>B.S. in Mathematics, B.S. in Statistics, Certificate in Applied Data Science</p>
-    <p><strong>Relevant Coursework:</strong></p>
-    <ul>
-      <li>Statistical Theory - Point Estimation, Interval Estimation, Hypothesis Testing, Likelihood Ratio Tests, Linear Regression, AutoRegression, Bayesian Estimation</li>
-      <li>Operations Research - Mathematical Modeling, Linear Programming, Duality, Sensitivity Analysis, Network Flows, Mixed Integer Programming, Game Theory</li>
-      <li>Signals and Systems - Convolutions, Hilbert Spaces, Fourier Series, Discrete Fourier Transform, Fast Fourier Transform, Filters, Sampling, Image Processing</li>
-      <li>Analysis - Mathematical Induction, Sets, Topology, Limits, Sequences, Series, Derivatives, Taylor Series, Integration</li>
-      <li>Epidemiology - Disease Measurement, Screening, Survival Analysis, Study Designs, Measures of Association, Statistical Inference, Bias, Confounding, Interaction, Regression, Causal Inference, Policy Design</li>
-      <li>Regression Analysis - Simple Linear Regression, T-Tests and ANOVA, Variable Transformations, Normality and Homoscedasticity Violations, Simultaneous Inference, Multiple Linear Regression, MLR ANOVA, Weighted Least Squares, Ridge Regression, Bootstrapping, Robust Regression, Interaction Terms, Categorical Data Analysis</li>
-      <li>Statistical Learning - Linear Regression, Linear Discriminant Analysis, Logistic Regression, Decision Trees, Random Forest Algorithms, Boosting</li>
-      <li>Probability - Combinatorics, Discrete Probability Distributions, Poisson Distribution, Exponential Distributions, Gamma Distributions, Normal Distributions, Joint PDFs, Random Variable Transformations, Limit Theorems</li>
-      <li>Introductory Statistics - Discrete Probability Distributions, Continuous Probability Distributions, Confidence Intervals, Hypothesis Testing, ANOVA, Linear Regression</li>
-      <li>Linear Algebra - Gaussian Elimination, Linear Combinations and Span, Vector Spaces, Linear Independence, Subspace, Basis and Dimensions, Determinants, Eigenvalues, Least Squares, Principal Component Analysis, Singular Value Decomposition</li>
-      <li>Programming in C - Arrays, Pointers, Linked Lists, Stacks, Queues, Heaps, Binary Search Trees, Memory Allocation, Error Handling, Optimization, Rust, File Management</li>
-      <li>Discrete Mathematics - Logic, Sets, Number Systems, Counting, Algorithm Analysis, Time Complexity, Graphs, Trees, Proofs, Recursion, Number Theory, Proofs, Finite State Machines, Automata, Computability</li>
-    </ul>
-  </section>
 
-  <section id="projects">
-    <h2>Personal Projects</h2>
-    <div class="project">
-      <h3>Statistical Inference for ML Fairness Metrics and Application to Recidivism Risk Forecasting</h3>
-      <p>Developing statistical inference procedures for ML fairness metrics defined in peer-reviewed study (https://fairware.cs.umass.edu/papers/Verma.pdf). Training various machine learning algorithms (Logistic Regression, LDA, Random Forest, Gradient Boosting) to forecast recidivism given data collected by the National Institute of Justice and evaluating model bias using developed inference procedures. Planning to submit to IEEE Big Data Conference.</p>
-      <p><a href="https://github.com/animeshjoshi/Algorithmic-Fairness-in-Recidivism-Forecasting-Algorithms">GitHub Link</a></p>
+    <div class="education-card">
+        <h3>Purdue University</h3>
+        <p><strong>B.S. in Mathematics, B.S. in Statistics, Certificate in Applied Data Science</strong></p>
+        <p><strong>Expected Graduation:</strong> Dec 2025</p>
+        <h4>Relevant Coursework:</h4>
+        <ul>
+            <li><strong>Statistical Theory</strong> – Topics: Point Estimation, Interval Estimation, Hypothesis Testing, Likelihood Ratio Tests, Linear Regression, Autoregression, Bayesian Estimation</li>
+            <p>This course helped me build a strong foundation in statistical theory, focusing on how to derive and test estimators and make inferences from data.</p>
+            
+            <li><strong>Operations Research</strong> – Topics: Mathematical Modeling, Linear Programming, Duality, Sensitivity Analysis, Network Flows, Mixed Integer Programming, Game Theory</li>
+            <p>This course taught me how to model complex decision-making processes using mathematical methods and algorithms, which is crucial for optimization problems in data science.</p>
+
+            <li><strong>Signals and Systems</strong> – Topics: Convolutions, Hilbert Spaces, Fourier Series, Discrete Fourier Transform, Fast Fourier Transform, Filters, Sampling, Image Processing</li>
+            <p>I gained an understanding of how signals are processed, especially in the context of data analysis and machine learning applications that involve signal processing.</p>
+
+            <li><strong>Analysis</strong> – Topics: Mathematical Induction, Sets, Topology, Limits, Sequences, Series, Derivatives, Taylor Series, Integration</li>
+            <p>This course refined my understanding of advanced mathematical concepts, which are foundational to statistical and machine learning theory.</p>
+
+            <li><strong>Epidemiology</strong> – Topics: Disease Measurement, Screening, Survival Analysis, Study Designs, Measures of Association, Statistical Inference, Bias, Confounding, Interaction, Regression, Causal Inference, Policy Design</li>
+            <p>This course helped me apply statistical principles in the context of public health, emphasizing causal inference and the design of observational studies.</p>
+
+            <li><strong>Regression Analysis</strong> – Topics: Simple Linear Regression, T-Tests and ANOVA, Variable Transformations, Normality and Homoscedasticity Violations, Simultaneous Inference, Multiple Linear Regression, MLR ANOVA, Weighted Least Squares, Ridge Regression, Bootstrapping, Robust Regression, Interaction Terms, Categorical Data Analysis</li>
+            <p>A comprehensive course where I learned how to handle various regression models, including handling violations of assumptions and using techniques like bootstrapping for more robust inference.</p>
+
+            <li><strong>Statistical Learning</strong> – Topics: Linear Regression, Linear Discriminant Analysis, Logistic Regression, Decision Trees, Random Forest Algorithms, Boosting</li>
+            <p>This course introduced me to machine learning algorithms and model evaluation techniques, equipping me with tools to work with complex datasets.</p>
+
+            <li><strong>Probability</strong> – Topics: Combinatorics, Discrete Probability Distributions, Poisson Distribution, Exponential Distributions, Gamma Distributions, Normal Distributions, Joint PDFs, Random Variable Transformations, Limit Theorems</li>
+            <p>I learned the fundamentals of probability theory, which is the backbone of statistical modeling and machine learning.</p>
+
+            <li><strong>Introductory Statistics</strong> – Topics: Discrete Probability Distributions, Continuous Probability Distributions, Confidence Intervals, Hypothesis Testing, ANOVA, Linear Regression</li>
+            <p>A foundational course where I gained practical experience with statistical analysis techniques, laying the groundwork for more advanced courses.</p>
+
+            <li><strong>Linear Algebra</strong> – Topics: Gaussian Elimination, Linear Combinations and Span, Vector Spaces, Linear Independence, Subspace, Basis and Dimensions, Determinants, Eigenvalues, Least Squares, Principal Component Analysis, Singular Value Decomposition</li>
+            <p>I learned how to work with high-dimensional data, crucial for machine learning algorithms such as Principal Component Analysis (PCA) and Singular Value Decomposition (SVD).</p>
+
+            <li><strong>Programming in C</strong> – Topics: Arrays, Pointers, Linked Lists, Stacks, Queues, Heaps, Binary Search Trees, Memory Allocation, Error Handling, Optimization, Rust, File Management</li>
+            <p>This course provided a deep dive into data structures and algorithms, which are essential for writing efficient and optimized code for data manipulation.</p>
+
+            <li><strong>Discrete Mathematics</strong> – Topics: Logic, Sets, Number Systems, Counting, Algorithm Analysis, Time Complexity, Graphs, Trees, Proofs, Recursion, Number Theory, Finite State Machines, Automata, Computability</li>
+            <p>I learned core concepts in computer science and mathematics, which helped me understand how to solve computational problems and analyze algorithm efficiency.</p>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Utility Function for NFL Pass Plays and Defender Value Estimation</h3>
+        <p><strong>Project Type:</strong> PDF Report</p>
+        <a href="utility_function_project.pdf" target="_blank">Download PDF</a>
     </div>
 
-    <div class="project">
-      <h3>Utility Function for NFL Pass Plays and Defender Value Estimation</h3>
-      <p>Developed a utility function to quantify expected reward of passing plays. Utility of a play is probability of pass completion multiplied by projected yardage gain. Trained ML algorithms to estimate pass completion probability and projected yardage gain after the catch. Analyzed trends in utility over time after the snap. Computed marginal utility of defenders to estimate their value on the play and analyzed trends in marginal utility over time.</p>
-      <p><a href="https://github.com/animeshjoshi/nfl-data-bowl-25">GitHub Link</a></p>
+    <div class="project-card">
+        <h3>Loan Repayment Prediction</h3>
+        <p><strong>Project Type:</strong> PDF Report</p>
+        <a href="loan_repayment_prediction.pdf" target="_blank">Download PDF</a>
     </div>
 
-    <div class="project">
-      <h3>Loan Repayment Prediction</h3>
-      <p>Conducted extensive exploratory data analysis of lending data provided by Lending Club. Leveraged statistical learning methods and neural networks to assess probability of loan default. Capstone for the Data Science and Machine Learning Bootcamp.</p>
-      <p><a href="https://github.com/animeshjoshi/Loan-Repayment-Prediction">GitHub Link</a></p>
+    <div class="project-card">
+        <h3>Secure Computing Environment for Predictive Modeling and Generative AI</h3>
+        <p><strong>Project Type:</strong> PDF Report</p>
+        <a href="secure_computing_project.pdf" target="_blank">Download PDF</a>
     </div>
+</section>
 
-    <div class="project">
-      <h3>Secure Computing Environment for Predictive Modeling and Generative AI</h3>
-      <p>Designed a secure computing framework for conducting predictive modeling and generative AI tasks. Implemented methods for secure computing environments to protect sensitive data and enable machine learning model development. Built secure, interpretable models for use in privacy-sensitive domains.</p>
-      <p><a href="https://github.com/animeshjoshi/Secure-Computing-Framework-for-AI">GitHub Link</a></p>
-    </div>
-  </section>
 
   <section id="resume">
     <h2>Resume</h2>
