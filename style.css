@@ -1,150 +1,135 @@
-/* General Styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #333;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
 }
 
-h1, h2, h3, h4 {
-  color: #2c3e50;
-  margin-bottom: 15px;
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
 }
 
 p {
-  line-height: 1.6;
-  margin-bottom: 15px;
+  margin: 5px 0;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+section {
+  padding: 50px 20px;
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
-a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Header Section */
-header {
-  background-color: #2c3e50;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-header .profile img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-
-header .profile h1 {
+ul li {
   margin: 10px 0;
-  font-size: 2em;
 }
 
-header .profile p {
-  font-size: 1.2em;
+.project {
+  margin-bottom: 30px;
 }
 
-header .social-links a {
-  margin: 0 10px;
-  font-size: 1.2em;
-  color: #fff;
-}
-
-header .social-links a:hover {
-  color: #3498db;
-}
-
-/* Navigation */
-nav {
-  background-color: #34495e;
-  padding: 10px 0;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  font-size: 1.1em;
-  text-transform: uppercase;
-}
-
-nav ul li a:hover {
-  color: #3498db;
-}
-
-/* Sections */
-section {
-  padding: 40px 0;
-  border-bottom: 1px solid #ccc;
-}
-
-section h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-section h3 {
-  font-size: 1.5em;
-  margin-top: 20px;
-}
-
-section p {
-  font-size: 1.1em;
-}
-
-section ul {
+.project a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
   margin-top: 10px;
 }
 
-section ul li {
-  margin-bottom: 10px;
+.project a:hover {
+  text-decoration: underline;
 }
 
-section a {
-  font-size: 1.1em;
-  color: #3498db;
-}
-
-/* Resume Section */
-#resume {
+.social-links {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
+}
+
+.social-links .social-icon {
+  color: #333;
+  font-size: 30px;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.social-links .social-icon:hover {
+  color: #0073b1;
+}
+
+.social-links .social-icon.fab.fa-github:hover {
+  color: #333;
+}
+
+.social-links .social-icon.fas.fa-envelope:hover {
+  color: #ea4335;
 }
 
 #resume a {
-  font-size: 1.2em;
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 #resume a:hover {
-  background-color: #2980b9;
+  text-decoration: underline;
 }
