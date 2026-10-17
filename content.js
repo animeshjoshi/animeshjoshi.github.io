@@ -10,7 +10,7 @@ window.SITE = {
   tagline:
     "M.S. Statistics student at Purdue. I work on causal inference, experimentation, and machine learning.",
   email: "animeshjoshi88@gmail.com",
-  resume: "", // e.g. "files/resume.pdf" — leave empty to hide the button
+  resume: "Resume.pdf", // leave empty to hide the button
 
   socials: {
     github: "https://github.com/animeshjoshi",
@@ -55,12 +55,14 @@ window.SITE = {
   ],
 
   /* ---------- Page 2: Experience ---------- */
+  // logo = optional image shown next to the role (put files in images/logos).
   // highlights = the headline résumé bullets shown on each card.
   // projects   = deeper detail, shown in expandable sections under each role.
   experience: [
     {
       company: "Dexcom",
-      role: "Software Systems Engineering Intern",
+      logo: "images/logos/dexcom.svg",
+      role: "Software Systems Engineer Intern",
       location: "San Diego, CA",
       start: "May 2025",
       end: "Present",
@@ -111,12 +113,13 @@ window.SITE = {
     },
     {
       company: "Axos Bank",
-      role: "Credit Risk Analytics Intern",
+      logo: "images/logos/axos.svg",
+      role: "Data Analyst Intern",
       location: "San Diego, CA",
       start: "Jul 2024",
       end: "Aug 2024",
       summary:
-        "Worked on the credit risk team looking at what drives loan delinquency.",
+        "Analyzed loan and credit risk data to understand what drives delinquency.",
       highlights: [
         "Wrote SQL pipelines that pull loan-level data from several tables in the data warehouse for 4,000+ recent originations, and built summary tables the team could use directly.",
         "Ran a cohort analysis on $12.5B in originations over four fiscal years, grouping loans by when they were originated and comparing their risk profiles to help inform lending strategy.",
@@ -145,7 +148,8 @@ window.SITE = {
     },
     {
       company: "Purdue University",
-      role: "Undergraduate Researcher",
+      logo: "images/logos/purdue.svg",
+      role: "Undergraduate Research Assistant",
       location: "West Lafayette, IN",
       start: "Aug 2022",
       end: "May 2024",

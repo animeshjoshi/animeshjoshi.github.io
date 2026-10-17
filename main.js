@@ -140,9 +140,12 @@
             <article class="job">
               <div class="card">
                 <div class="job-head">
-                  <div>
-                    <h2>${esc(j.role)}</h2>
-                    <div class="company">${esc(j.company)}</div>
+                  <div class="job-title">
+                    ${j.logo ? `<div class="logo-tile"><img src="${esc(j.logo)}" alt="${esc(j.company)} logo"></div>` : ""}
+                    <div>
+                      <h2>${esc(j.role)}</h2>
+                      <div class="company">${esc(j.company)}</div>
+                    </div>
                   </div>
                   <div class="meta">${[j.start, j.end].filter(Boolean).map(esc).join(" – ")}${j.start || j.end ? "<br>" : ""}${esc(j.location)}</div>
                 </div>
